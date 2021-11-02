@@ -1,0 +1,4 @@
+task :cleanup do
+    File.delete(*Dir.glob('build/*.html'))
+    File.delete(*Dir.glob('build/*.md'))
+end
